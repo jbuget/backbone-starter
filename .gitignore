@@ -1,0 +1,8 @@
+# App generated files / folders
+node_modules/
+bin
+*.log
+
+# IntelliJ IDEA
+.idea
+*.iml
