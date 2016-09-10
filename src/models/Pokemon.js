@@ -1,9 +1,12 @@
 import Backbone from 'backbone';
 
 function getPokedexIdFromItsUrl(pokemon) {
+  if (!pokemon.get('url')) {
+    return 'N/A';
+  }
   const regexp = /http:\/\/pokeapi\.co\/api\/v2\/pokemon\/(\d+)\//;
   const matches = regexp.exec(pokemon.get('url'));
-  return matches[1];
+  return matches ? matches[1] : 'N/A';
 }
 
 function convertNumberIntoStringWithLeadingZeros(number, stringLength) {
