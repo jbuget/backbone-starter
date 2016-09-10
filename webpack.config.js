@@ -25,5 +25,5 @@ module.exports = {
     alias: {
       'handlebars': 'handlebars/dist/handlebars.js'
     }
-  },
+  }
 };

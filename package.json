@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "A starter project for Backbone.js with ES6, Webpack, Handlebars, Bootstrap and Mocha libraries.",
   "scripts": {
-    "build": "node node_modules/webpack/bin/webpack",
+    "build": "node node_modules/webpack/bin/webpack -d",
     "build-dev": "node node_modules/webpack-dev-server/bin/webpack-dev-server --content-base bin/",
-    "test": "node_modules/mocha/bin/mocha"
+    "build-prod": "node node_modules/webpack/bin/webpack -p",
+    "build-test": "node node_modules/webpack/bin/webpack --config test/webpack.test.config.js",
+    "test": "npm run build-test && mocha tmp/test.bundle.js"
   },
   "keywords": [
     "backbone.js",
@@ -23,13 +25,14 @@
     "backbone": "^1.3.3",
     "handlebars": "^4.0.5",
     "jquery": "^3.1.0",
+    "chai": "^3.5.0",
     "lodash": "^4.15.0"
   },
   "devDependencies": {
     "babel-core": "^6.14.0",
     "babel-loader": "^6.2.5",
+    "babel-polyfill": "^6.13.0",
     "babel-preset-es2015": "^6.14.0",
-    "chai": "^3.5.0",
     "css-loader": "^0.25.0",
     "eslint": "^3.5.0",
     "eslint-config-airbnb-base": "^7.0.0",
@@ -37,9 +40,14 @@
     "eslint-plugin-import": "^1.14.0",
     "handlebars-loader": "^1.4.0",
     "html-webpack-plugin": "^2.22.0",
+    "istanbul": "^0.4.5",
     "mocha": "^3.0.2",
+    "mocha-loader": "^0.7.1",
+    "mochawesome": "^1.5.2",
+    "source-map-support": "^0.4.2",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.15.1"
+    "webpack-dev-server": "^1.15.1",
+    "webpack-node-externals": "^1.3.3"
   }
 }

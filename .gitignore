@@ -1,6 +1,7 @@
 # App generated files / folders
 node_modules/
 bin
+tmp
 *.log
 
 # IntelliJ IDEA
