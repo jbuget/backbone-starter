@@ -1,4 +1,7 @@
 # backbone-starter
+
+[![CircleCI](https://circleci.com/gh/jbuget/backbone-starter.svg?style=svg)](https://circleci.com/gh/jbuget/backbone-starter)
+
 A starter project for Backbone.js with Webpack, Handlebars, Bootstrap and Mocha libraries.
 
 ## Less than 2 minutes tutorial
