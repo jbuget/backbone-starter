@@ -9,7 +9,7 @@ export default Page.extend({
 
   initialize() {
     this.collection = new Pokedex();
-    this.model = new Model({ name: 'Sacha' });
+    this.model = new Model({ title: 'Pokedex' });
   },
 
   render() {
@@ -18,7 +18,7 @@ export default Page.extend({
       success(collection) {
         self.$el.html(self.template({
           pokemons: collection.toJSON(),
-          title: self.model.get('name')
+          title: self.model.get('title')
         }));
       }
     });

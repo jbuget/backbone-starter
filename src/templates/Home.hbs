@@ -1,14 +1,18 @@
 {{> partials/Header}}
 
 <main class="container">
-    <h1>Hello {{title}}!</h1>
+    <h1>{{title}}</h1>
 
-    <ul class="pokemon-list">
+    <ul class="row pokemon-list">
         {{#each pokemons}}
-            <li class="pokemon-item">
+            <li class="col-md-3 pokemon-item">
                 <div class="pokemon">
-                    {{this.name}}
-                </div>
+                    <p class="pokemon-image">
+                        <img src="{{this.imageUrl}}"/>
+                        <p class="pokemon-id">No.{{this.pokedexId}}</p>
+                        <p class="pokemon-name">{{this.name}}</p>
+
+                    </div>
             </li>
         {{/each}}
     </ul>

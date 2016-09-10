@@ -1,8 +1,45 @@
-body {
-  padding-top: 50px;
-  padding-bottom: 70px;
+#app > header {
+  min-height: 5px;
+  background-color: #E3350D;
 }
 
-.navbar {
-  background-color: #34495E;
+#app > main {
+  padding: 40px 0;
+}
+
+#app > footer {
+  border-top: 1px solid #F2F2F2;
+  padding: 30px 0;
+  min-height: 200px;
+}
+
+.pokemon-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+}
+
+.pokemon-item {
+  margin: 0;
+}
+
+.pokemon {
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.pokemon-image {
+  background-color: #F2F2F2;
+  border-radius: 5px;
+}
+
+.pokemon-id {
+  color: #919191;
+}
+
+.pokemon-name {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 22px;
 }
