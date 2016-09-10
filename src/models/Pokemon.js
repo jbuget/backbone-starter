@@ -1,3 +1,9 @@
 import Backbone from 'backbone';
 
-export default Backbone.Model.extend({});
+export default Backbone.Model.extend({
+
+  defaults: {
+    "name": null
+  }
+
+});
