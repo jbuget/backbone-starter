@@ -1,6 +1,7 @@
 # backbone-starter
 
 [![CircleCI](https://circleci.com/gh/jbuget/backbone-starter.svg?style=svg)](https://circleci.com/gh/jbuget/backbone-starter)
+[![Code Climate](https://codeclimate.com/github/jbuget/backbone-starter/badges/gpa.svg)](https://codeclimate.com/github/jbuget/backbone-starter)
 
 A starter project for Backbone.js with Webpack, Handlebars, Bootstrap and Mocha libraries.
 
