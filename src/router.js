@@ -19,6 +19,6 @@ export default Backbone.Router.extend({
 
   about() {
     showView(new About());
-  },
+  }
 
 });

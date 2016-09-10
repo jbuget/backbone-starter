@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "A starter project for Backbone.js with ES6, Webpack, Handlebars, Bootstrap and Mocha libraries.",
   "scripts": {
-    "build": "node node_modules/webpack/bin/webpack",
+    "build": "node node_modules/webpack/bin/webpack -d",
     "build-dev": "node node_modules/webpack-dev-server/bin/webpack-dev-server --content-base bin/",
-    "test": "node_modules/mocha/bin/mocha"
+    "build-prod": "node node_modules/webpack/bin/webpack -p",
+    "test": "mocha --recursive -r babel-register"
   },
   "keywords": [
     "backbone.js",
@@ -29,6 +30,7 @@
     "babel-core": "^6.14.0",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.14.0",
+    "babel-register": "^6.14.0",
     "chai": "^3.5.0",
     "css-loader": "^0.25.0",
     "eslint": "^3.5.0",
