@@ -11,7 +11,7 @@ A starter project for Backbone.js with Webpack, Handlebars, Bootstrap and Mocha 
 $ git clone git@github.com:jbuget/backbone-starter.git
 $ cd backbone-starter
 $ npm install
-$ npm run build-dev
+$ npm start
 $ open "http://localhost:8080"
 ```
 
@@ -33,14 +33,18 @@ $ open "http://localhost:8080"
 
 ## NPM tasks
 
+### `$ npm start`
+
+Run the application in `development` mode with dev tools.
+
 ### `$ npm run build`
 
 Build the application in `/bin` directory.
 
-### `$ npm run build-dev`
+### `$ npm run build-prod`
 
-Run the application in development mode via [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html) with dev tools.
+Package the application in `production` mode. 
 
 ### `$ npm test`
 
-Run the application tests.
+Run the tests. A graphic report is generated in folder `/tmp/test`.

@@ -4,9 +4,9 @@
   "description": "A starter project for Backbone.js with ES6, Webpack, Handlebars, Bootstrap and Mocha libraries.",
   "scripts": {
     "build": "node node_modules/webpack/bin/webpack -d",
-    "build-dev": "node node_modules/webpack-dev-server/bin/webpack-dev-server --content-base bin/",
     "build-prod": "node node_modules/webpack/bin/webpack -p",
     "build-test": "node node_modules/webpack/bin/webpack --config test/webpack.test.config.js",
+    "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server --content-base bin/",
     "test": "npm run build-test && mocha tmp/test.bundle.js"
   },
   "keywords": [
