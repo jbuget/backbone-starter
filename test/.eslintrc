@@ -4,7 +4,15 @@
     "comma-dangle": [2, "never"],
     "no-new": [0],
     "no-unused-expressions": [0],
-    "padded-blocks": [0]
+    "padded-blocks": [0],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ]
   },
   "env": {
     "browser": true,

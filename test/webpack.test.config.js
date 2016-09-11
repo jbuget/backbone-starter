@@ -1,10 +1,13 @@
 module.exports = {
   entry: './test/test.js',
   output: {
-    path: './tmp',
+    path: './build',
     filename: 'test.bundle.js'
   },
   module: {
+    preLoaders: [
+      { test: /\.js$/, loader: 'eslint', exclude: /node_modules/ }
+    ],
     loaders: [
       { test: /\.css$/, loader: "null" },
       { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },

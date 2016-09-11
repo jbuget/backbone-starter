@@ -5,9 +5,8 @@
   "scripts": {
     "build": "node node_modules/webpack/bin/webpack -d",
     "build-prod": "node node_modules/webpack/bin/webpack -p",
-    "build-test": "node node_modules/webpack/bin/webpack --config test/webpack.test.config.js",
     "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server --content-base bin/ --progress --colors --hot --inline",
-    "test": "npm run build-test && mocha tmp/test.bundle.js"
+    "test": "node_modules/karma/bin/karma start test/karma.conf.js"
   },
   "keywords": [
     "backbone.js",
@@ -17,6 +16,7 @@
     "lodash",
     "mocha",
     "chai",
+    "karma",
     "eslint"
   ],
   "author": "Jérémy Buget",
@@ -44,8 +44,16 @@
     "handlebars-loader": "^1.4.0",
     "html-webpack-plugin": "^2.22.0",
     "istanbul": "^0.4.5",
+    "karma": "^1.3.0",
+    "karma-chai": "^0.1.0",
+    "karma-coverage": "^1.1.1",
+    "karma-mocha": "^1.1.1",
+    "karma-mocha-reporter": "^2.1.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-webpack": "^1.8.0",
     "mocha": "^3.0.2",
     "mochawesome": "^1.5.2",
+    "phantomjs-prebuilt": "^2.1.12",
     "source-map-support": "^0.4.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",

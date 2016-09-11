@@ -2,6 +2,7 @@
 node_modules/
 bin
 tmp
+build
 *.log
 
 # IntelliJ IDEA

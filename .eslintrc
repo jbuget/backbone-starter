@@ -2,7 +2,8 @@
   "extends": "airbnb-base",
   "rules": {
     "comma-dangle": [2, "never"],
-    "no-new": [0]
+    "no-new": [0],
+    "max-len": ["error", 120]
   },
   "env": {
     "browser": true,
