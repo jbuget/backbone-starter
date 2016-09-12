@@ -1,5 +1,5 @@
 import Backbone from 'backbone';
-import Router from './router';
+import Router from './Router';
 
 /* eslint-disable */
 import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
