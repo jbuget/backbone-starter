@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "A starter project for Backbone.js with ES6, Webpack, Handlebars, Bootstrap and Mocha libraries.",
   "scripts": {
-    "build": "node node_modules/webpack/bin/webpack -d",
+    "build-dev": "node node_modules/webpack/bin/webpack -d",
     "build-prod": "node node_modules/webpack/bin/webpack -p",
     "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server --content-base bin/ --progress --colors --hot --inline",
-    "test": "node node_modules/testem/testem.js ci",
-    "test-dev": "node node_modules/testem/testem.js"
+    "build-test": "node node_modules/webpack/bin/webpack -d --config test/webpack.testem.config.js",
+    "test": "node node_modules/testem/testem.js ci -f test/testem.js",
+    "test-dev": "node node_modules/testem/testem.js -f test/testem.js"
   },
   "keywords": [
     "backbone.js",

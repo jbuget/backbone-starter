@@ -8,7 +8,9 @@ export default Page.extend({
   template: Home,
 
   initialize() {
-    this.collection = new Pokedex();
+    if (!this.collection) {
+      this.collection = new Pokedex();
+    }
     this.model = new Model({ title: 'Pokedex' });
   },
 

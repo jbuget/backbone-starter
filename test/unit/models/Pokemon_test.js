@@ -1,5 +1,6 @@
-import { expect } from 'chai';
 import Pokemon from '../../../src/models/Pokemon';
+
+const expect = chai.expect;
 
 describe('Unit | Models | Pokemon', () => {
 

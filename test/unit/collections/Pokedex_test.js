@@ -1,5 +1,6 @@
-import { expect } from 'chai';
 import Pokedex from '../../../src/collections/Pokedex';
+
+const expect = chai.expect;
 
 describe('Unit | Collections | Pokedex', () => {
 

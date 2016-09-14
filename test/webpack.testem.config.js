@@ -1,14 +1,12 @@
 var webpack = require('webpack');
 
 module.exports = {
+  entry: './test/test.js',
   output: {
-    path: '../build',
+    path: './build/test',
     filename: 'test.bundle.js'
   },
   module: {
-    preLoaders: [
-      { test: /\.js$/, loader: 'eslint', exclude: /node_modules/ }
-    ],
     loaders: [
       { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
       { test: /\.hbs$/, loader: 'handlebars', exclude: /node_modules/ }
@@ -20,5 +18,10 @@ module.exports = {
     alias: {
       'handlebars': 'handlebars/dist/handlebars.js'
     }
+  },
+  node: {
+    fs: 'empty',
+    child_process: 'empty'
   }
+
 };
