@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>Test'em</title>
+
+    <!-- Testing -->
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script src="../node_modules/chai/chai.js"></script>
+    <script src="/testem.js"></script>
+    <script>mocha.setup('bdd')</script>
+
+    <!-- App -->
+    <script src="../build/test/test.bundle.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+    <link rel="stylesheet" href="{{.}}">
+</head>
+<body>
+
+<div id="mocha"></div>
+
+<div id="app"></div>
+
+<script>
+    mocha.run()
+</script>
+
+</body>
+</html>

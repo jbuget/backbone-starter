@@ -1,5 +1,6 @@
 module.exports = {
   "framework": "mocha+chai",
+  "test_page": "./test/index.mustache",
   "src_files": [
     "src/**/*.js",
     "test/**/*.js"
@@ -9,5 +10,8 @@ module.exports = {
   ],
   "before_tests": "npm run build-test",
   "launch_in_dev": ["PhantomJS", "Chrome"],
-  "launch_in_ci": ["PhantomJS"]
+  "launch_in_ci": ["PhantomJS"],
+  "browser_args": {
+    "PhantomJS": "--ignore-ssl-errors=true"
+  }
 };

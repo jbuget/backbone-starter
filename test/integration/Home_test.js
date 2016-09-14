@@ -16,11 +16,7 @@ class PokedexMock extends Pokedex {
   }
 }
 
-describe('Acceptance | Views | Home', () => {
-
-  before(() => {
-    $('body').append('<div id="app"></div>');
-  });
+describe('Integration | Views | Home', () => {
 
   it('should exist', () => {
     // given

@@ -24,7 +24,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({
+      title: 'Backbone starter application',
+      template: 'src/index.hbs',
+    })
   ],
   debug: true,
   devtool: 'source-map',

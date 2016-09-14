@@ -7,7 +7,7 @@
     "build-prod": "node node_modules/webpack/bin/webpack -p",
     "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server --content-base bin/ --progress --colors --hot --inline",
     "build-test": "node node_modules/webpack/bin/webpack -d --config test/webpack.testem.config.js",
-    "test": "node node_modules/testem/testem.js ci -f test/testem.js",
+    "test": "node node_modules/testem/testem.js ci -f test/testem.js -P 2",
     "test-dev": "node node_modules/testem/testem.js -f test/testem.js"
   },
   "keywords": [
@@ -18,7 +18,7 @@
     "lodash",
     "mocha",
     "chai",
-    "karma",
+    "testem",
     "eslint"
   ],
   "author": "Jérémy Buget",
