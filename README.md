@@ -1,9 +1,8 @@
 # backbone-starter
 
 [![CircleCI](https://circleci.com/gh/jbuget/backbone-starter.svg?style=svg)](https://circleci.com/gh/jbuget/backbone-starter)
-[![Code Climate](https://codeclimate.com/github/jbuget/backbone-starter/badges/gpa.svg)](https://codeclimate.com/github/jbuget/backbone-starter)
 
-A starter project for Backbone.js with Webpack, Handlebars, Bootstrap and Mocha libraries.
+A starter project for Backbone.js with Webpack, Handlebars, Bootstrap and other modern libraries.
 
 ## Less than 2 minutes tutorial
 
@@ -21,30 +20,43 @@ $ open "http://localhost:8080"
 - [Backbone.js](http://backbonejs.org/)
 - [Lodash](https://lodash.com/)
 - [Handlebars](http://handlebarsjs.com/)
-- [Mocha](https://mochajs.org/) (with Chai)
 - [Webpack](https://webpack.github.io/)
 - [ESLint](http://eslint.org/) (with [Airbnb base config](https://www.npmjs.com/package/eslint-config-airbnb-base))
+- [Mocha](https://mochajs.org/) (with [Chai](http://chaijs.com/))
+- [Testem](https://github.com/testem/testem)
 
-## Useful links
-
-- Deployed application on [Heroku]()
-- Continuous integration on [CircleCI](https://circleci.com/gh/jbuget/backbone-starter)
-- Code quality on [CodeClimate](https://codeclimate.com/github/jbuget/backbone-starter)
 
 ## NPM tasks
 
-### `$ npm start`
+### Main tasks
 
-Run the application in `development` mode with dev tools.
+#### `$ npm install`
 
-### `$ npm run build`
+Download the project dependencies.
 
-Build the application in `/bin` directory.
+#### `$ npm start`
 
-### `$ npm run build-prod`
+Run the application in `development` mode with dev tools and sources watching.
 
-Package the application in `production` mode. 
+#### `$ npm test`
 
-### `$ npm test`
+Run the tests in `CI` mode (only one execution with no sources watching).
 
-Run the tests. A graphic report is generated in folder `/tmp/test`.
+### Other tasks
+
+#### `$ npm run build-dev`
+
+Package the application in `/build/dist` directory in `development` mode.
+
+#### `$ npm run build-prod`
+
+Package the application in `/build/dist` directory in `production` mode.
+
+#### `$ npm run build-test`
+
+Package the application in `/build/test` directory in `test` mode.
+
+#### `$ npm run test-dev`
+
+Run the tests  in `development` mode with sources watching.
+
