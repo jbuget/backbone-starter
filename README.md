@@ -14,6 +14,8 @@ $ npm start
 $ open "http://localhost:8080"
 ```
 
+![Application screenshot](./screenshot.png)
+
 ## Frameworks, libraries & tools
 
 - [EcmaScript6](http://www.ecma-international.org/ecma-262/6.0/) (with [Babel](https://babeljs.io/))
